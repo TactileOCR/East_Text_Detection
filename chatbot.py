@@ -1,19 +1,23 @@
 
+
 import openai
 import os
+from dotenv import load_dotenv
 
-# Set up OpenAI API credentials
-openai.api_key = os.environ["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"]
+
+# load values from the .env file if it exists
+load_dotenv()
+
+# configure OpenAI
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Define function to get chatbot response
 def get_chatbot_response(prompt):
-    response = openai.Completion.create(
-        engine="davinci",
+    response = openai.completions.create(
+        model="text-davinci-003",
         prompt=prompt,
         max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
+       
     )
     message = response.choices[0].text.strip()
     return message
