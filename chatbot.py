@@ -1,33 +1,35 @@
-
-
-import openai
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 
-
-# load values from the .env file if it exists
+# Load values from the .env file if it exists
 load_dotenv()
 
-# configure OpenAI
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Configure OpenAI
+key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(api_key=key)
 
 # Define function to get chatbot response
 def get_chatbot_response(prompt):
-    response = openai.completions.create(
-        model="text-davinci-003",
-        prompt=prompt,
-        max_tokens=1024,
-       
-    )
-    message = response.choices[0].text.strip()
-    return message
+   chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content" : prompt,
+        }
+    ],
+    model="gpt-3.5-turbo",
+)
+   print(chat_completion.choices[0].message.content)
+   return chat_completion.choices[0].message.content
 
 # Define function to get chatbot response for a given input string
 def get_response(input_string):
-    prompt = f"User: {input_string}\nChatbot:"
-    return get_chatbot_response(prompt)
+    return get_chatbot_response(input_string)
 
+def main():
+    response = get_response("Hello, who are you?")
+    print(response)
 
-
-response = get_response("Hello, who are you?")
-print(response)
+main()
