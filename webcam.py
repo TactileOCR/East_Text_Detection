@@ -4,7 +4,7 @@ from pytesseract import Output
 import shutil
 
 #pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-pytesseract.pytesseract.tesseract_cmd = shutil.which("foo") 
+pytesseract.pytesseract.tesseract_cmd = shutil.which("tesseract") 
 
 def show_webcam_stream():
     # Initialize the webcam (use 0: default camera)
