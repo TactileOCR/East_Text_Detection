@@ -1,8 +1,11 @@
 import cv2
 import pytesseract
 from pytesseract import Output
+import shutil
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = shutil.which("foo") 
+
 def show_webcam_stream():
     # Initialize the webcam (use 0: default camera)
     cap = cv2.VideoCapture(0)
