@@ -7,11 +7,6 @@ from dotenv import load_dotenv
 # Load values from the .env file if it exists
 load_dotenv()
 
-
-if os.environ["TESSDATA_PREFIX"] is None:
-    os.environ["TESSDATA_PREFIX"] = "/home/marek/GitProjects/tessdata_best"
-
-
 #pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 pytesseract.pytesseract.tesseract_cmd = shutil.which("tesseract") 
 
