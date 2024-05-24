@@ -1,6 +1,22 @@
 ## Abstract 
 
-TACTILE (Tactical Analysis and Communication through Text Integration with Language Engines) implements advancements in OCR techniques and integrates a Large Language Model to extract and communicate text from images decisively. This study intends to mitigate bias and distrust within dual-AI technologies and develop AI-integrated software for text analysis. This software will have commercial and military applications to extract, interpret, and extrapolate image data. This project is guided toward developing drone software for military intelligence to capture and communicate text found on images into compressed data packages discretely with a defined level of autotomy. The commercial aspect of this software would entail the application of automated data collection from sensor readings and other forms of texts found in daily life. This project aims to demonstrate the connection between the LLM, deep learning, the natural world, and the limitations of pre-trained models. Developing algorithms that can operate within limited computation power and maintain accuracy and efficiency. 
+TACTILE (Tactical Analysis and Communication through Text Integration
+with Language Engines) implements advancements in OCR techniques and
+integrates a Large Language Model to extract and communicate text from
+images decisively. This study intends to mitigate bias and distrust
+within dual-AI technologies and develop AI-integrated software for
+text analysis. This software will have commercial and military
+applications to extract, interpret, and extrapolate image data. This
+project is guided toward developing drone software for military
+intelligence to capture and communicate text found on images into
+compressed data packages discretely with a defined level of
+autotomy. The commercial aspect of this software would entail the
+application of automated data collection from sensor readings and
+other forms of texts found in daily life. This project aims to
+demonstrate the connection between the LLM, deep learning, the natural
+world, and the limitations of pre-trained models. Developing
+algorithms that can operate within limited computation power and
+maintain accuracy and efficiency.
 
 ## Sources 
 
