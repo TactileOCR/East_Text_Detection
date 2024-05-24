@@ -7,8 +7,12 @@ load_dotenv()
 
 # Configure OpenAI
 key = os.getenv("OPENAI_API_KEY")
+organization=os.getenv("OPENAI_ORGANIZATION");
+project=os.getenv("OPENAI_PROJECT");
 
-client = OpenAI(api_key=key)
+client = OpenAI(api_key=key,
+                organization=organization,
+                project=project)
 
 # Define function to get chatbot response
 def get_chatbot_response(prompt):
