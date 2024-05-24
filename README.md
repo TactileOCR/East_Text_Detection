@@ -32,6 +32,9 @@ which handle external dependencies:
   known to contain a file **eng.traineddata** which contains the English
   language model.
 
+We included the file ![./env.template] which should be copied to .env
+and edited to define various environment variables.
+
 ## Sources 
 
 
