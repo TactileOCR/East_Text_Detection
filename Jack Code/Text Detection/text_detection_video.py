@@ -11,6 +11,7 @@ import os
 import signal
 import sys
 
+# We may handle interrupts rather than 'q' keystroke
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
     sys.exit(0)
