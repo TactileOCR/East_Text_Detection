@@ -31,7 +31,7 @@ which handle external dependencies:
   we provide a mechanism through the **.env** file. The folder is
   known to contain a file **eng.traineddata** which contains the English
   language model.
-We included the file [.env.template](./env.template) which should be copied to .env
+We included the file [.env.template](./.env.template) which should be copied to .env
 and edited to define various environment variables.
 
 ## Sources 
