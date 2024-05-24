@@ -23,9 +23,9 @@ The file **.env** in the top directory must contain environment variables
 which handle external dependencies:
   * The code talks to OpenAI API and it needs a valid API key
   in order to implement this functionality.
-  * The code implements OCR by calling Tesseract OCR. Therefore, we need
+  * The code implements OCR by calling *Tesseract OCR*. Therefore, we need
   the location of the language files, so called *tessdata*. The location
-  is a folder. Tesseract reads an environment variable TESSDATA_PREFIX
+  is a folder. Tesseract reads an environment variable **TESSDATA_PREFIX**
   to find the location of that folder, and therefore this variable
   needs to be set up. There are other ways to set this variable, but
   we provide a mechanism through the **.env** file.
