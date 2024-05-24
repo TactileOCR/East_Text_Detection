@@ -37,16 +37,16 @@ and edited to define various environment variables.
 ## Sources 
 
 
-https://arxiv.org/abs/1904.01941
-https://dojofordrones.com/
-https://classic.gazebosim.org/tutorials?tut=install_ubuntu&cat=install
-https://pypi.org/project/pytesseract/
-https://wiki.ros.org/noetic
-https://github.com/openai/openai-python
-https://docs.opencv.org/4.0.1/d1/dfb/intro.html
-https://wandb.ai/sayakpaul/tale-of-quantization/reports/A-Tale-of-Model-quantization-in-TF-Lite--Vmlldzo5MzQwMA
-https://wiki.ros.org/ROS/Introduction
-https://github.com/tesseract-ocr/tessdoc
-https://dronekit-python.readthedocs.io/en/latest/Drone
-https://ardupilot.org/dev/index.html
-https://arxiv.org/abs/1704.03155
+* https://arxiv.org/abs/1904.01941
+* https://dojofordrones.com/
+* https://classic.gazebosim.org/tutorials?tut=install_ubuntu&cat=install
+* https://pypi.org/project/pytesseract/
+* https://wiki.ros.org/noetic
+* https://github.com/openai/openai-python
+* https://docs.opencv.org/4.0.1/d1/dfb/intro.html
+* https://wandb.ai/sayakpaul/tale-of-quantization/reports/A-Tale-of-Model-quantization-in-TF-Lite--Vmlldzo5MzQwMA
+* https://wiki.ros.org/ROS/Introduction
+* https://github.com/tesseract-ocr/tessdoc
+* https://dronekit-python.readthedocs.io/en/latest/Drone
+* https://ardupilot.org/dev/index.html
+* https://arxiv.org/abs/1704.03155
