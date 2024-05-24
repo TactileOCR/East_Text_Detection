@@ -28,7 +28,9 @@ which handle external dependencies:
   is a folder. Tesseract reads an environment variable **TESSDATA_PREFIX**
   to find the location of that folder, and therefore this variable
   needs to be set up. There are other ways to set this variable, but
-  we provide a mechanism through the **.env** file.
+  we provide a mechanism through the **.env** file. The folder is
+  known to contain a file **eng.traineddata** which contains the English
+  language model.
 
 ## Sources 
 
