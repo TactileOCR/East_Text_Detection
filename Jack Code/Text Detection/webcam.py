@@ -36,7 +36,15 @@ def show_webcam_stream():
         found_areas = []
         info = []
         for i in range(n_boxes):
-            if data["text"][i] != "" or data["text"][i].strip() != "" or data["text"][i].strip('\n') != "" and data['left'][i] > 0 and data['top'][i] > 0 and data['width'][i] != 0 and data['height'][i] != 0  and data['left'][i] + data['width'][i] < 360 and data['left'][i] + data['top'][i] < 240 :
+            if data["text"][i] != ""
+            or data["text"][i].strip() != ""
+            or data["text"][i].strip('\n') != ""
+            and data['left'][i] > 0
+            and data['top'][i] > 0
+            and data['width'][i] != 0
+            and data['height'][i] != 0
+            and data['left'][i] + data['width'][i] < 360
+            and data['left'][i] + data['top'][i] < 240:
                 if data['conf'][i] >= 93:
                     (x, y, w, h) = (data['left'][i], data['top'][i], data['width'][i], data['height'][i])
                     frame = cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
