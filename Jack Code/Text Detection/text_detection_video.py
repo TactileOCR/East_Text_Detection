@@ -8,6 +8,14 @@ import numpy as np
 import time
 import os
 
+import signal
+import sys
+
+def signal_handler(sig, frame):
+    print('You pressed Ctrl+C!')
+    sys.exit(0)
+
+
 def preprocess_image(image):
     # load the input image and grab the image dimensions
     orig = image.copy()
