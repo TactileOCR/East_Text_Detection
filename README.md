@@ -54,3 +54,6 @@ and edited to define various environment variables.
 ## Installing ROS noetic on Debian 12 (bookworm)
 Thanks to the detailed instructions below, it is possible.
 * https://gist.github.com/vrbadev/ec168a0940d45f523bf050011d7dff75
+
+## Installing ROS2 on Ubuntu 24.04
+https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html
