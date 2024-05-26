@@ -50,3 +50,7 @@ and edited to define various environment variables.
 * https://dronekit-python.readthedocs.io/en/latest/Drone
 * https://ardupilot.org/dev/index.html
 * https://arxiv.org/abs/1704.03155
+
+## Installing ROS noetic on Debian 12 (bookworm)
+Thanks to the detailed instructions below, it is possible.
+* https://gist.github.com/vrbadev/ec168a0940d45f523bf050011d7dff75
