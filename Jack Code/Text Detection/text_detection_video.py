@@ -148,7 +148,7 @@ def east_text_detection(frame):
     image, orig, rW, rH = preprocess_image(frame)
     # Perform inference
     quantization = "int8" #@param ["dr", "int8", "float16"]
-    scores, geometry = perform_inference(tflite_path=f'weightes/east_model_{quantization}.tflite',
+    scores, geometry = perform_inference(tflite_path=f'../weightes/east_model_{quantization}.tflite',
                                      preprocessed_image=image)
     # Process scores and geometry to find and draw bounding boxes
     # (Assuming you have a function or method to do this)
