@@ -57,3 +57,6 @@ Thanks to the detailed instructions below, it is possible.
 
 ## Installing ROS2 on Ubuntu 24.04
 https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html
+
+## Using MAVSDK with Python - Examples
+https://github.com/mavlink/MAVSDK-Python/tree/main/examples
