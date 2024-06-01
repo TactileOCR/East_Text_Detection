@@ -54,3 +54,6 @@ and edited to define various environment variables.
 ## Installing ROS noetic on Debian 12 (bookworm)
 Thanks to the detailed instructions below, it is possible.
 * https://gist.github.com/vrbadev/ec168a0940d45f523bf050011d7dff75
+
+## Handling camera attached to Raspberry Pi
+https://www.raspberrypi.com/documentation/computers/camera_software.html#build-libcamera-and-rpicam-apps
