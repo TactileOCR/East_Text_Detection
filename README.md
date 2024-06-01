@@ -57,3 +57,8 @@ Thanks to the detailed instructions below, it is possible.
 
 ## Handling camera attached to Raspberry Pi
 * https://www.raspberrypi.com/documentation/computers/camera_software.html#build-libcamera-and-rpicam-apps
+## Installing ROS2 on Ubuntu 24.04
+https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html
+
+## Using MAVSDK with Python - Examples
+https://github.com/mavlink/MAVSDK-Python/tree/main/examples
