@@ -99,7 +99,7 @@ def ocr_from_image(image_path):
     text = pytesseract.image_to_string(gray)
     print(f"OCR Result: {text}")
 
-async def take_pictures()
+async def take_pictures():
     for _ in range(10):
         image_path = await capture_image()
         if image_path:
@@ -112,7 +112,7 @@ async def main():
     await arm_and_takeoff(drone)
     await set_mission(drone)
     await asyncio.sleep(20)  # Wait for mission to complete
-    take_pictures()
+    await take_pictures()
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
