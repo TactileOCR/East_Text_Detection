@@ -59,7 +59,8 @@ def make_mission_item(latitude_deg = latitude_deg_default, longitude_deg = longi
 async def set_mission(drone):
     mission_items = [
         make_mission_item(),
-        make_mission_item(latitude_deg_default + delta_lat_deg, longitude_deg + delta_long_deg)
+        make_mission_item(latitude_deg_default + delta_lat_deg, 
+                          longitude_deg_default + delta_long_deg)
     ]
     
     mission_plan = MissionPlan(mission_items)
