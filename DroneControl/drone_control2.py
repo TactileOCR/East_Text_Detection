@@ -104,7 +104,7 @@ async def take_pictures()
         image_path = await capture_image()
         if image_path:
             ocr_from_image(image_path)
-            asyncio.sleep(5)
+        asyncio.sleep(5)
 
 
 async def main():
@@ -112,7 +112,7 @@ async def main():
     await arm_and_takeoff(drone)
     await set_mission(drone)
     await asyncio.sleep(20)  # Wait for mission to complete
-
+    take_pictures()
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
