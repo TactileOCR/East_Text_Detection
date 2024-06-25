@@ -105,7 +105,9 @@ async def main():
     await arm_and_takeoff(drone)
     await set_mission(drone)
     #await asyncio.sleep(20)  # Wait for mission to complete
-    await capture_image(drone)
+    for _ in range(10):
+        await capture_image(drone)
+        asyncio.sleep(5)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
