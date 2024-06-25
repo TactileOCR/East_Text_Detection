@@ -4,6 +4,15 @@ import pytesseract
 from mavsdk import System
 from mavsdk.mission import (MissionItem, MissionPlan)
 
+# Initial position
+latitude_deg=47.398170327054473,
+longitude_deg=8.5456490218639658,
+
+
+# Change between taking pics
+delta_lat_deg = -7.101107064499956e-05
+delta_long_deg = 0.00011301040652256233
+
 async def setup_drone():
     drone = System()
     await drone.connect(system_address="udp://:14540")
@@ -26,6 +35,26 @@ async def arm_and_takeoff(drone):
     print("-- Taking off")
     await drone.action.takeoff()
     await asyncio.sleep(10)
+
+def make_mission_item(latitude_deg, longitude_deg):
+    item = MissionItem(
+        latitude_deg=latitude_deg,
+        longitude_deg=longitude_deg,
+        relative_altitude_m=10,
+        speed_m_s=10,
+        is_fly_through=True,
+        gimbal_pitch_deg=float('nan'),
+        gimbal_yaw_deg=float('nan'),
+        camera_action=MissionItem.CameraAction.NONE,
+        loiter_time_s=float('nan'),
+        camera_photo_interval_s=float('nan'),
+        acceptance_radius_m=1.0,
+        yaw_deg=float('nan'),
+        camera_photo_distance_m=float('nan')
+    )
+    return item 
+
+
 
 async def set_mission(drone):
     mission_items = [
