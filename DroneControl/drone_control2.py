@@ -5,8 +5,8 @@ from mavsdk import System
 from mavsdk.mission import (MissionItem, MissionPlan)
 
 # Initial position
-latitude_deg=47.398170327054473,
-longitude_deg=8.5456490218639658,
+latitude_deg_default = 47.398170327054473
+longitude_deg_default = 8.5456490218639658
 
 
 # Change between taking pics
@@ -36,7 +36,7 @@ async def arm_and_takeoff(drone):
     await drone.action.takeoff()
     await asyncio.sleep(10)
 
-def make_mission_item(latitude_deg, longitude_deg):
+def make_mission_item(latitude_deg = latitude_deg_default, longitude_deg = longitude_deg_default):
     item = MissionItem(
         latitude_deg=latitude_deg,
         longitude_deg=longitude_deg,
