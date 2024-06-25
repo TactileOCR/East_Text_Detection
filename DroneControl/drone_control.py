@@ -104,7 +104,7 @@ async def main():
     drone = await setup_drone()
     await arm_and_takeoff(drone)
     await set_mission(drone)
-    await asyncio.sleep(20)  # Wait for mission to complete
+    #await asyncio.sleep(20)  # Wait for mission to complete
     await capture_image(drone)
 
 if __name__ == "__main__":
