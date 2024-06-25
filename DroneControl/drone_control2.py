@@ -58,36 +58,8 @@ def make_mission_item(latitude_deg, longitude_deg):
 
 async def set_mission(drone):
     mission_items = [
-        MissionItem(
-            latitude_deg=47.398170327054473,
-            longitude_deg=8.5456490218639658,
-            relative_altitude_m=10,
-            speed_m_s=10,
-            is_fly_through=True,
-            gimbal_pitch_deg=float('nan'),
-            gimbal_yaw_deg=float('nan'),
-            camera_action=MissionItem.CameraAction.NONE,
-            loiter_time_s=float('nan'),
-            camera_photo_interval_s=float('nan'),
-            acceptance_radius_m=1.0,
-            yaw_deg=float('nan'),
-            camera_photo_distance_m=float('nan')
-        ),
-        MissionItem(
-            latitude_deg=47.398241338125118,
-            longitude_deg=8.5455360114574432,
-            relative_altitude_m=10,
-            speed_m_s=10,
-            is_fly_through=True,
-            gimbal_pitch_deg=float('nan'),
-            gimbal_yaw_deg=float('nan'),
-            camera_action=MissionItem.CameraAction.NONE,
-            loiter_time_s=float('nan'),
-            camera_photo_interval_s=float('nan'),
-            acceptance_radius_m=1.0,
-            yaw_deg=float('nan'),
-            camera_photo_distance_m=float('nan')
-        )
+        make_mission_item(),
+        make_mission_item()
     ]
     
     mission_plan = MissionPlan(mission_items)
