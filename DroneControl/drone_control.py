@@ -4,6 +4,7 @@ import pytesseract
 from mavsdk import System
 from mavsdk.mission import (MissionItem, MissionPlan)
 from dotenv import load_dotenv
+import shutil
 
 # Load values from the .env file if it exists
 load_dotenv()
