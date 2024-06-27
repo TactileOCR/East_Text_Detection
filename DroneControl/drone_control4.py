@@ -1,3 +1,15 @@
+#----------------------------------------------------------------
+# File:     drone_control4.py
+#----------------------------------------------------------------
+#
+# Author:   Marek Rychlik (rychlik@arizona.edu)
+# Date:     Thu Jun 27 16:54:40 2024
+# Copying:  (C) Marek Rychlik, 2020. All rights reserved.
+# 
+#----------------------------------------------------------------
+# In this version we fly a mission and asynchronously
+# take pictures
+
 import asyncio
 import cv2
 import pytesseract
