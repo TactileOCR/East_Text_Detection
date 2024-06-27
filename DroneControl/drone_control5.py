@@ -7,7 +7,8 @@
 # Copying:  (C) Marek Rychlik, 2020. All rights reserved.
 # 
 #----------------------------------------------------------------
-# In this version, we add items to a running mission
+# In this version, we add items to a running mission.
+# While flying the mission we take a pic every 5 seconds
 import asyncio
 import cv2
 import pytesseract
