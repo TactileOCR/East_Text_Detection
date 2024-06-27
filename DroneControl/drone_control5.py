@@ -7,7 +7,7 @@
 # Copying:  (C) Marek Rychlik, 2020. All rights reserved.
 # 
 #----------------------------------------------------------------
-# In this version, we add to a running mission
+# In this version, we add items to a running mission
 import asyncio
 import cv2
 import pytesseract
